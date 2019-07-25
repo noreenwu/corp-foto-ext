@@ -51,9 +51,7 @@ $layout    = get_theme_mod( 'fotografie_featured_content_layout', 'layout-three'
 	<?php if ( '' !== $title || $sub_title ) : ?>
 		<div class="blog-section-headline section-heading-wrap">
 			<?php if ( '' !== $title ) : ?>
-				<div class="page-title-wrapper">
-					<h2 class="page-title section-title"><?php echo wp_kses_post( $title ); ?></h2>
-				</div><!-- .page-title-wrapper -->
+			        <!-- displayed Featured section title -->
 			<?php endif; ?>
 
 			<?php if ( $sub_title ) : ?>
