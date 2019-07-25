@@ -47,7 +47,7 @@ if ( $hero_query->have_posts() ) :
 					<?php endif; ?>
 						<?php if ( ! get_theme_mod( 'fotografie_disable_hero_content_title' ) ) : ?>
 						<header class="entry-header">
-							<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+							<!-- contained header -->
 						</header><!-- .entry-header -->
 						<?php endif; ?>
 
