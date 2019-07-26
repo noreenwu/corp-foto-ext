@@ -34,8 +34,10 @@ if ( $q->have_posts() ) {
   while ( $q->have_posts() ) {
     $q->the_post();
     // your loop
+    echo("<div class=homepage-post>");
     the_title( '<h3>', '</h3>' );
 	the_content();
+	echo("</div");
   }
 }
 ?>	
