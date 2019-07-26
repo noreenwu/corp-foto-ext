@@ -30,16 +30,17 @@ $args = array(
   'post_parent' => $parent
 ); 
 $q = new WP_Query($args);
-if ( $q->have_posts() ) { 
-  while ( $q->have_posts() ) {
-    $q->the_post();
-    // your loop
-    echo("<div class=homepage-post>");
-    the_title( '<h3>', '</h3>' );
-	the_content();
-	echo("</div");
-  }
-}
+if ( $q->have_posts() ) :
+  while ( $q->have_posts() ) :
+    $q->the_post(); ?>
+
+    <article class=homepage-post>
+    <?php the_title( '<h3>', '</h3>' );
+	      the_content();
+	?>
+	</article>
+  <?php endwhile;
+endif;
 ?>	
 					<!-- removing original loop which displayed Did you know--
 						the page that is chosen from Customize as the static page
