@@ -1,0 +1,77 @@
+.stat-flex-container {
+	 display: flex;
+}
+
+.stat {
+	 padding: 15px 30px 10px;
+	 margin: 20px;
+	 background-color: lightblue;
+	 font-size: 1.2em;
+}
+
+.singular-section #primary .entry-header, .singular-section #primary .entry-content, .singular-section #primary .entry-footer, .singular-section #primary .comments-area, .woocommerce .site-main {
+	max-width: 90%;
+}
+
+
+.custom-header .section .section-title {
+	font-family: Georgia;
+	text-transform: uppercase;
+}
+
+.inline-img {
+	padding: 0 10px 20px 0;
+	float: left;
+}
+
+.donate-blurb {
+	padding-top: 20px;
+}
+
+#featured-content-section {
+	padding-top: 0;
+}
+
+@media screen and (min-width: 33.375em) {
+.hero-content-wrapper     .entry-container.full-width {
+    padding-top: 0;
+	  padding-bottom: 10px;
+	}
+}
+
+.theme-style-blurb {
+	font-family: Raleway;
+	font-size: .8em;
+}
+
+.centered-btn {
+	text-align: center;
+}
+
+@media screen and (min-width: 64em) {
+	.featured-content-wrapper .entry-header {
+		top: 70%;
+	}
+	
+}
+	
+.iframe-video {
+	margin: 20px;
+}
+
+.homepage-post {
+	margin-bottom: 60px;
+}
+
+h1, h2, h3 {
+	font-family: Georgia;
+}
+
+.sreader {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
