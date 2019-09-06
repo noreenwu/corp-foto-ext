@@ -137,6 +137,18 @@ function corporatefotografie_custom_header_parameters( $params ) {
 }
 add_filter( 'fotografie_custom_header_args', 'corporatefotografie_custom_header_parameters' );
 
+/** allows a sidebar to display on the right side for pages using News template */
+add_filter( 'body_class','news_body_classes' );
+function news_body_classes( $classes ) {
+ 
+	if ( is_page_template( 'news-page.php' ) ) {
+		$classes[] = 'two-columns-layout';
+		$classes[] = 'content-left';
+	}
+    return $classes;     
+}
+
+
 /**
  * Registers a widget area.
  *
