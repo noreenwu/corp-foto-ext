@@ -31,9 +31,19 @@
 	?>
 	</a>
 
+	
 	<header class="entry-header">
 		<?php
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h2>' );
+			$field_name = 'alternative_headline';
+			if (get_field($field_name)) {
+				$field = get_field_object($field_name);
+				echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+				echo $field['prepend'] . $field['value'] . $field['append'];
+				echo '</a>';
+			}
+			else {
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h2>' );
+			}
 		?>
 	    <!-- the date was here --> 
 	</header>
