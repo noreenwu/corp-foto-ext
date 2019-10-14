@@ -1,0 +1,132 @@
+
+.clearfix {
+	overflow: auto;
+}
+
+.custom-logo {
+	width: 70%;
+}
+
+.img-space-right {
+	margin-right: 30px;
+	float: left;
+}
+
+.stat-flex-container {
+  display: grid;
+  flex-wrap: wrap;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.stat {
+	 padding: 20px 10px;
+	 margin: 20px;
+	 background-color: lightblue;
+	 font-size: 1.2em;
+	 border: 5px solid lightgrey;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.singular-section #primary .entry-header, .singular-section #primary .entry-content, .singular-section #primary .entry-footer, .singular-section #primary .comments-area, .woocommerce .site-main {
+	max-width: 90%;
+}
+
+
+.custom-header .section .section-title {
+	font-family: Georgia;
+	text-transform: uppercase;
+}
+
+.inline-img {
+	padding: 0 20px 20px 0;
+	float: left;
+}
+
+.donate-blurb {
+	padding-top: 20px;
+}
+
+#featured-content-section {
+	padding-top: 0;
+}
+
+@media screen and (min-width: 33.375em) {
+.hero-content-wrapper     .entry-container.full-width {
+    padding-top: 0;
+	  padding-bottom: 10px;
+	}
+}
+
+.theme-style-blurb {
+	font-family: Raleway;
+	font-size: .8em;
+}
+
+.centered-btn {
+	text-align: center;
+}
+
+@media screen and (min-width: 64em) {
+	.featured-content-wrapper .entry-header {
+		top: 70%;
+	}
+	
+}
+	
+.iframe-video {
+	margin: 10px 20px 50px 30px;
+	
+}
+
+
+.homepage-post {
+	margin-bottom: 60px;
+	font-family: Raleway;
+}
+
+.homepage-post > h3 {
+	text-align: center; 
+	font-family: Georgia;
+}
+
+h1, h2, h3 {
+	font-family: Raleway;
+	font-size: 1.5em;
+}
+
+h2.article-page {
+	font-size: 1.9em;
+	font-family: Garamond;
+}
+
+h3.article-page {
+	font-size: 1.6em;
+	font-family: Garamond;
+}
+.sreader {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}	
+
+figcaption {
+	font-size: .8em;
+	text-align: center;
+}
+
+.homepage-highlight-caption {
+    padding-top: 8%;
+    padding-left: 6%;
+    font-size: 1.2em;	
+}
