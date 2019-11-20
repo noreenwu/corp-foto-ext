@@ -44,6 +44,16 @@
 			else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h2>' );
 			}
+			$second_field_name = 'alternative_blurb';
+			if (get_field($second_field_name)) {
+				$field = get_field_object($second_field_name);
+				echo '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">';
+				echo $field['prepend'] . $field['value'] . $field['append'];
+				echo '</a>';			
+			}
+			
+
+			
 		?>
 	    <!-- the date was here --> 
 	</header>
