@@ -44,6 +44,11 @@
 			else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h2>' );
 			}
+		?>
+	</header>
+	<div class="alternative-blurb">
+	
+		<?php
 			$second_field_name = 'alternative_blurb';
 			if (get_field($second_field_name)) {
 				$field = get_field_object($second_field_name);
@@ -55,6 +60,6 @@
 
 			
 		?>
-	    <!-- the date was here --> 
-	</header>
+	</div>
+
 </article>
